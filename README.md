@@ -14,8 +14,14 @@ A Real-Time Messaging Web Application which used HTML/CSS/JS, PHP, and SQL to en
 
 - - -
 ### ℹ️ Credits ℹ️
-##### Group Name: EjyFace
-##### Group Members : Alexander Cadoret, Yingqi Feng, Tyler Nguyen, Brandon Witt, Tony You
+##### Group Name: 
+EjyFace
+##### Group Members : 
+Alexander Cadoret
+Yingqi Feng
+Tyler Nguyen
+Brandon Witt
+Tony You
 
 ##### Member Roles:
 |Name|Roles|Responsible|
