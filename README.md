@@ -9,7 +9,7 @@ A Real-Time Messaging Web Application which used HTML/CSS/JS, PHP, and SQL to en
 
 - - -
 ### Demo Video
-![DemoVideo](demo_video/chitchat.mp4)
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/VNiv3t2i7b1DHXuY6m" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/VNiv3t2i7b1DHXuY6m">Click to watch full video</a></p>
 
 - - -
 ### ℹ️ Credits ℹ️
