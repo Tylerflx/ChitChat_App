@@ -9,8 +9,7 @@ A Real-Time Messaging Web Application which used HTML/CSS/JS, PHP, and SQL to en
 
 - - -
 ### Demo Video
-<video width="590" height="280" controls loading="lazy">
-<source src="/demo_video/chitchat.mp4" type="video/mp4">Your browser does not support HTML video.</video>
+![DemoVideo](demo_video/chitchat.mp4)
 
 - - -
 ### ℹ️ Credits ℹ️
