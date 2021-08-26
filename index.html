@@ -1,0 +1,185 @@
+
+<!-- 
+    Link to the FAU color codes:
+    https://teamcolorcodes.com/florida-atlantic-owls-color-codes/
+-->
+<html>
+<head>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="proj_software.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EjyFace</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="get_message.js"></script>
+    <script src = "newChat.js"></script>
+    <script src="userInfo.js"></script>
+    <script src="getChat.js"></script>
+    <script src="get_notifications.js"></script>
+    <script src="name_dropdown.js"></script>
+    <script src="window_unloading.js"></script>
+   <!-- <script src="my.js"></script> -->
+</head>
+
+<body >
+    <div class="sidenav">
+        <nav id="sidenav">
+            <!--owl image-->
+            <div>
+                <img src="images/logo-owl.svg " style="width:67.5px; height:85;">
+            </div>
+        </nav>
+    </div>
+<!--from this-->
+    <div class="container">
+        <!-- drop down start-->
+        <div class="box">
+            <div class="search_box">
+                <div class="dropdown-class">
+                    <select id="class_dropdown">
+                        <!--This will generate by itself-->
+                    </select>   
+                </div>
+                <div class="dropdown-people">
+                    <select id="type_dropdown">
+                        <!--This will generate by itself-->
+                        
+                    </select>
+                </div>
+                <!--generate name by class and type-->
+                <div class="dropdown-name">
+                    <select id="name_dropdown">
+                        <option value="" disabled selected>Name</option>
+                    </select>
+                </div>
+                <div class="btn-panel">
+                    <button class="new_chat_button text-right" id="start_chat_button">Chat</button>
+                </div> 
+</div>
+<!--to here-->
+        <!-- dropdown end -->
+
+        <div class="row">
+            <div class="col-lg-3">
+                <!--class="btn-primary btn-panel-conversation"-->
+
+                <!-- this will be the new chat button-->
+                <!-- when it is clicked a pop up menu will be appear where you can 
+                select who  -->
+                <!--  <a href="" class="btn  col-lg-6  send-message-btn pull-left" role="button"><i class="fa fa-plus"></i> New Chat</a>-->
+               <!-- <button class="new_chat_button" onclick="openNewChatWindow()" type="submit">New Chat</button>
+                <script>
+                    function openNewChatWindow() {
+                        //first parameter is the url link
+                        //second parameter is the name of the window
+                        var myWindow = window.open("index.html", "Open New Chat", "width=500,height=500");
+                    }
+                </script>-->
+
+            </div>
+
+        <!--  
+            <div class="col-lg-offset-1 col-lg-7">
+                <div class="btn-panel btn-panel-msg">
+
+                    <a href="" class="btn  col-lg-3  send-message-btn pull-right" role="button"><i class="fa fa-gears"></i> Settings</a>
+                </div>
+            </div>
+        </div>
+    -->
+
+        <!--/////////////////////////////-->
+        <!--Conversation View (side panel)-->
+        <div class="row">
+
+            <h3>Conversations</h3>
+
+            <!-- Where each ongoing conversation between other users will be displayed -->
+            <div class="conversation-wrap col-lg-3" z-index= "-1" >
+
+                
+
+                
+                <div class="media conversation"  id="15" href='#'>
+                    <a class="pull-left" href="#">
+                        <img class="media-object avatar" data-src="holder.js/64x64" alt="64x64" style="width: 50px; height: 50px;" src="images/avatar.png">
+                    </a>
+                    <div class="media-body " >
+                        <div id="status" class="unknown_status"></div>
+                        <h5 class="media-heading" >  Sally Smith</h5>
+                                            
+                    </div>
+                </div>
+                
+                <div class="media conversation"  id="30" href='#'>
+                    <a class="pull-left" href="#">
+                        <img class="media-object avatar" data-src="holder.js/64x64" alt="64x64" style="width: 50px; height: 50px;" src="images/avatar.png">
+                    </a>
+                    <div class="media-body " >
+                        <div id="status" class="offline"></div>
+                        <h5 class="media-heading" >John Doe</h5>
+                                              
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+
+
+            <!--//////////////////////////-->
+            <!-- Messanger View -->
+
+            <div class="message-wrap col-lg-8">
+
+                <div id="Messages" class="msg-wrap">
+
+
+                    <!--Chat heading here -->
+
+                    <!-- Where each message between chat users will be displayed  -->
+                    
+                    <!-- <div class="alert alert-info msg-date">
+                    <strong>Today</strong>
+                </div>-->
+
+
+                <img class="media-object center_img" src="images/message_owl.png">
+
+                   
+
+
+                  
+                    
+
+                </div>
+
+                <div class="send-wrap ">
+                    <textarea class="form-control send-message" rows="2" id="Send_Message_Box" maxlength="140" placeholder="Write a reply..."></textarea>
+
+
+                </div>
+
+                
+                <div class="btn-panel">
+                    
+                    <button  action ="SendMessage.php"class="new_chat_button text-right" id="Send_Message_Btn" style="float: right;" >Send Message</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+</body></html>
+
+

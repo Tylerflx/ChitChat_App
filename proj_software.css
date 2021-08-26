@@ -1,0 +1,249 @@
+.conversation-wrap {
+    box-shadow: -2px 0 3px #ddd;
+    padding: 0;
+    max-height: 400px;
+    overflow: auto;
+    z-index: '-1';
+}
+
+.conversation {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    cursor: pointer;
+    background-color: white;
+    
+
+}
+
+.message-wrap {
+    box-shadow: 0 0 3px #ddd;
+    padding: 5;
+    z-index: '-1';
+    background-color:white;
+
+}
+
+.msg {
+    padding: 5px;
+    /*border-bottom:1px solid #ddd;*/
+    margin: 0;
+}
+
+.msg-wrap {
+    padding: 10px;
+    max-height: 400px;
+    min-height:400px;
+    overflow: auto;
+
+}
+
+.time {
+    color: #bfbfbf;
+}
+
+.send-wrap {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    /*background: #f8f8f8;*/
+}
+
+.send-message {
+    resize: none;
+}
+
+.highlight {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+.send-message-btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border-bottom-right-radius: 0;
+}
+
+.btn-panel {
+    background: #f7f7f9;
+}
+
+.btn-panel .btn {
+    color: #b8b8b8;
+
+    transition: 0.2s all ease-in-out;
+}
+
+.btn-panel .btn:hover {
+    color: #666;
+    background: #f8f8f8;
+}
+
+.btn-panel .btn:active {
+    background: #f8f8f8;
+    box-shadow: 0 0 1px #ddd;
+}
+
+.btn-panel-conversation .btn,
+.btn-panel-msg .btn {
+
+    background: #f8f8f8;
+}
+
+.btn-panel-conversation .btn:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.msg-wrap .media-heading {
+    color: #003bb3;
+    font-weight: 700;
+}
+
+
+.msg-date {
+    background: none;
+    text-align: center;
+    color: #aaa;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /*        -webkit-border-radius: 10px;
+        border-radius: 10px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*        -webkit-border-radius: 10px;
+        border-radius: 10px;*/
+    background: #ddd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #ddd;
+}
+
+/* The sidenav (mock of canvas' navigation bar */
+.sidenav {
+
+    /*
+    height: 100%;
+    width: 100px;
+    */
+
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #003366;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+
+
+/*
+new chat button
+*/
+.new_chat_button {
+    background-color: #003366;
+    /* FAU blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*
+css for solid border around a paragraph tag
+*/
+p.solid {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.center_button {
+    justify-content: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d3d9d9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 500px;
+    display: block;
+    overflow: hidden;
+}
+
+
+#status
+{
+    
+
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display: block;
+    float: left;
+
+}
+
+.unknown_status
+{
+    background: gray;
+}
+
+.offline
+{
+    background: #d9534f ;
+
+}
+
+.online
+{
+    
+    background:  #5cb85c;
+    
+}
+
+.online_viewing_chat
+{
+    
+    background:  #0275d8;
+    
+}
+
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 12%;
+  }
